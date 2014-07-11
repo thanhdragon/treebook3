@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Treebook3</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="navbar">
+	<div class="navbar-inner navbar-fixed-top">
+		<div class="container">
+			<a href="#" class="brand">New test</a>
+			<ul class="nav">
+				<li><%= link_to "Home ",statuses_path %></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<p class="notice bg-success"><%= notice %></p>
+    <p class="alert bg-info"><%= alert %></p>
+
+	<%= yield %>
+</div>
+
+</body>
+</html>
